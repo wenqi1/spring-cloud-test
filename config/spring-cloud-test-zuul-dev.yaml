@@ -4,6 +4,10 @@ spring:
   application:
     name: zuul-server
 eureka:
+  instance:
+    hostname: localhost  
   client:
+    fetch-registry: true
+    register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:80000/eureka
+      defaultZone: http://localhost:8000/eureka
