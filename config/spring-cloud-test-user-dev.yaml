@@ -5,9 +5,9 @@ spring:
     name: user-service
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost  
   client:
     fetch-registry: true
     register-with-eureka: true
-    service-url: 
-        defaultZone: http://localhost:8000/eureka/
+    service-url:
+      defaultZone: http://localhost:8000/eureka
