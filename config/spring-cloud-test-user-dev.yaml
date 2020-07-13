@@ -22,3 +22,7 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8000/eureka
+snowflake:
+  workerId: 1
+  datacenterId: 1
+  
