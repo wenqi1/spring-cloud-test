@@ -3,6 +3,17 @@ server:
 spring:
   application:
     name: user-service
+    datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.37.128:3306/learn_db?useUnicode=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbcp2:  #数据库连接池配置
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
 eureka:
   instance:
     hostname: localhost  
