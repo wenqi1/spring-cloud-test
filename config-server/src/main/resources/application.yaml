@@ -1,0 +1,12 @@
+server:
+  port: 8010       # \u914D\u7F6E\u670D\u52A1\u7AEF\u53E3
+spring:
+  application:
+    name: config-server    # \u914D\u7F6E\u5E94\u7528\u540D\u79F0
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wenqi1/spring-cloud-test.git   # \u914D\u7F6Egithub\u4ED3\u5E93\u5730\u5740
+          default-label: master    # \u914D\u7F6E\u6587\u4EF6\u5206\u652F
+          search-paths: config     # \u914D\u7F6E\u6587\u4EF6\u6240\u5728\u6839\u76EE\u5F55

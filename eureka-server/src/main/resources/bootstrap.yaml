@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      label: master
+      profile: ${spring.profiles.active}
+      uri: http://localhost:8010
+      name: spring-cloud-test-eureka
+
