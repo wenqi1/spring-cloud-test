@@ -163,6 +163,8 @@ CREATE TABLE `user_info`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_bin COMMENT = '用户信息表' ROW_FORMAT = Dynamic;
 
+INSERT INTO `user_info` VALUES (733980318033383424, 'jack', '123456', '13500000000', NULL, NULL, NULL);
+
 -- ----------------------------
 -- Table structure for user_role
 -- ----------------------------
